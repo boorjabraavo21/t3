@@ -2,3 +2,11 @@ h1 {
     color: beige;
     background-color: royalblue;
 }
+
+.p1 nav {
+    background-color: yellow;
+}
+
+.p2 nav {
+    background-color: turquoise;
+}
