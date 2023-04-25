@@ -1,0 +1,35 @@
+#fondo {
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;
+    margin: 2% 27% 0%;
+    border-style: solid;
+    border-width: 3px;
+    height: 83vh;
+}
+
+h1 {
+    color:darkblue;
+    margin-left: 43%;
+}
+
+.fila {
+    height: 25vh;
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.cuadrado {
+    font-size: 20vh;
+    text-align: center;
+    background-color: navajowhite;
+    border-style: solid;
+    border-width: 3px;
+    margin: 1%;
+    height: 100%;
+    width: 100%;
+}
+
+/*.cuadrado:hover {
+    background-color: yellowgreen;
+}*/
