@@ -1,5 +1,4 @@
 'use strict';
-alert('Este es mi tres en raya\nBorja Bravo Casermeiro\n1º DAW');
 var tablero = [];
 
 function enter(identificador) {
