@@ -1,0 +1,8 @@
+#zonaModo {
+    position: sticky;
+    top: 10px;
+    margin-left: auto;
+    background-color: green;
+    width: 30vh;
+    height: 30vh;
+}

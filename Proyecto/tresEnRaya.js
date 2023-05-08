@@ -1,5 +1,5 @@
 'use strict';
-var tablero = [];
+var tablero = [[],[],[]];
 
 function enter(identificador) {
     var id = 'c'+identificador;
@@ -14,7 +14,7 @@ function leave(identificador) {
 }
 
 var contador = 0;
-function ponerDibujos(identificador) {
+function ponerDibujos(identificador, posX, posY) {
     var id;
     var cuadro;
     if (contador < 9) {
@@ -26,10 +26,9 @@ function ponerDibujos(identificador) {
         } else {
             simbolo = "O";
         }
-        var posicion = identificador - 1;
-        if (tablero[posicion] == null) {
+        if (tablero[posX][posY] == null) {
             cuadro.innerHTML = simbolo;
-            tablero[posicion] = simbolo;
+            tablero[posX][posY] = simbolo;
             contador++;
         }
         if (haGanado()) {
@@ -42,21 +41,21 @@ function ponerDibujos(identificador) {
 }
 
 function haGanado() {
-    if (tablero[0] == tablero[1] && tablero[0] == tablero[2] && tablero[0] != null) {
+   if (tablero[0][0] == tablero[0][1] && tablero[0][0] == tablero[0][2] && tablero[0][0] != null) {
         return true;
-    } else if (tablero[3] == tablero[4] && tablero[3] == tablero[5] && tablero[3] != null) {
+    } else if (tablero[1][0] == tablero[1][1] && tablero[1][0] == tablero[1][2] && tablero[1][0] != null) {
         return true;
-    } else if (tablero[6] == tablero[7] && tablero[6] == tablero[8] && tablero[6] != null) {
+    } else if (tablero[2][0] == tablero[2][1] && tablero[2][0] == tablero[2][2] && tablero[2][0] != null) {
         return true;
-    } else if (tablero[0] == tablero[3] && tablero[0] == tablero[6] && tablero[0] != null) {
+    } else if (tablero[0][0] == tablero[1][0] && tablero[0][0] == tablero[2][0] && tablero[0][0] != null) {
         return true;
-    } else if (tablero[1] == tablero[4] && tablero[1] == tablero[7] && tablero[1] != null) {
+    } else if (tablero[0][1] == tablero[1][1] && tablero[0][1] == tablero[2][1] && tablero[0][1] != null) {
         return true;
-    } else if (tablero[2] == tablero[5] && tablero[2] == tablero[8] && tablero[2] != null) {
+    } else if (tablero[0][2] == tablero[1][2] && tablero[0][2] == tablero[2][2] && tablero[0][2] != null) {
         return true;
-    } else if (tablero[0] == tablero[4] && tablero[0] == tablero[8] && tablero[0] != null) {
+    } else if (tablero[0][0] == tablero[1][1] && tablero[0][0] == tablero[2][2] && tablero[0][0] != null) {
         return true;
-    } else if (tablero[2] == tablero[4] && tablero[2] == tablero[6] && tablero[2] != null) {
+    } else if (tablero[0][2] == tablero[1][1] && tablero[0][2] == tablero[2][0] && tablero[0][2] != null) {
         return true;
     } else {
         return false;
