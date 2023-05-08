@@ -1,8 +1,23 @@
+#todo {
+    color: darkblue;
+    background-color: darksalmon;
+}
+
 #zonaModo {
-    position: sticky;
-    top: 10px;
-    margin-left: auto;
-    background-color: green;
-    width: 30vh;
-    height: 30vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 10vh;
+    height: 10vh;
+}
+
+#dia, #noche {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#dia {
+    display: none;
 }

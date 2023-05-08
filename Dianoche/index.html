@@ -7,10 +7,11 @@
     <title>Modos dia/noche con javascript</title>
     <link href="dianoche.css" rel="stylesheet">
 </head>
-<body>
+<body id="todo">
     <!-- body como viewport en donde se colgará la zona del dia/noche -->
     <div id="zonaModo">
-
+        <img id="noche" src="./luna.png" onclick="ponerModoNoche()">
+        <img id="dia" src="./sol.png" onclick="ponerModoDia()">
     </div>
     <ol>
         <li>texto...</li>
@@ -63,4 +64,5 @@
         <li>texto...</li>
     </ol>
 </body>
+<script src="./dianoche.js"></script>
 </html>
