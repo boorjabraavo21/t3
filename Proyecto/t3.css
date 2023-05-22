@@ -3,7 +3,8 @@
 }
 
 body {
-    background-color: rgb(21, 32, 64);
+    background-color: beige;
+    color: rgb(21, 32, 64);
 }
 
 .cajas {
@@ -18,15 +19,11 @@ body {
 }
 
 #contenido {
-    background-color: beige;
-    color: rgb(21, 32, 64);
     text-align: center;
     border-radius: 5px;
 }
 
 #titulo {
-    background-color: beige;
-    color: rgb(21, 32, 64);
     text-align: center;
     border-radius: 5px;
     padding: 1%;
