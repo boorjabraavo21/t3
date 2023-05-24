@@ -5,24 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configuración</title>
+    <title>Ajustes</title>
     <link href="t3.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="ajustes.html">Ajustes</a>
-    </nav>
     <br />
-    <h1>Configuración de la página</h1>
+    <h1>Ajustes de la página</h1>
     <p>Elija un color de fuente</p>
     <input type="color" name="colorElegido" />
-    <p>Elija el tamaño de la fuente</p>
+    <!-- <p>Elija el tamaño de la fuente</p>
     <select name="tamFuente">
         <option value="0.8">Pequeño</option>
         <option value="1.0">Mediano</option>
         <option value="1.4">Grande</option>
+    </select> -->
+    <p>Elija la familia de fuente</p>
+    <select name="famFuente">
+        <option value="'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Gill Sans</option>
+        <option value="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Franklin Gothic Medium</option>
+        <option value="'Times New Roman', Times, serif">Times New Roman</option>
     </select>
     <p>Elija el fondo de pantalla</p>
     <select name="fondoPantalla">
@@ -34,7 +36,16 @@
     <br />
     <button type="button" onclick="aplicarCambios()">APLICAR</button>
     <p id="mensaje"></p>
-
+    <nav>
+        <ul>
+            <a class="botones" href="./index.html">
+                <li class="fondobotones" id="seleccionado">Inicio</li>
+            </a>
+            <a class="botones" href="./ajustes.html">
+                <li class="fondobotones">Ajustes</li>
+            </a>
+        </ul>
+    </nav>
     <script src="index.js"></script>
 </body>
 

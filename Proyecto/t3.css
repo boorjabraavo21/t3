@@ -1,5 +1,20 @@
-* {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.botones {
+    font-size: 20px;
+}
+
+.fondobotones {
+    display: inline-block;
+    width: 100px;
+    height: 4vh;
+    background-color: blanchedalmond;
+    margin: 5px;
+    padding-top: 2px;
+    border-width: 0px 2px 2px 0px;
+    border-color: gainsboro;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px gray;
 }
 
 :root {
@@ -14,15 +29,16 @@
     background-size: cover;
 }
 
-.cajas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 #indice {
-    width: 90vh;
+    opacity: 70%;
+    background-color: aliceblue;
+    position: absolute;
+    top: 10%;
+    left: 10%;
     margin: auto;
+    padding: 19%;
+    width: 90vh;
+    height: 20vh;
 }
 
 #contenido {
@@ -30,7 +46,10 @@
     border-radius: 5px;
 }
 
-#titulo {
+#titulo, h1 {
+    position: absolute;
+    top: 5%;
+    left: 22%;
     text-align: center;
     border-radius: 5px;
     padding: 1%;
@@ -41,8 +60,42 @@ a {
     margin: 3% 0% 3%;
 }
 
+#unJuego:hover, #masInfo:hover {
+    color: red;
+}
+
 nav {
     position: fixed;
     top: 5;
-    opacity: 70%;
+    left: 0;
+}
+
+#contenidoInicio {
+    width: 150vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    text-align: center;
+}
+
+#logo {
+    position: absolute;
+    top: 8%;
+    left: 41%;
+    width: 40vh;
+    height: auto;
+}
+
+#fotoNoticia {
+    width: 50vh;
+    height: auto;
+}
+
+picture {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }

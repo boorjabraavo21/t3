@@ -10,17 +10,36 @@
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="ajustes.html">Ajustes</a>      
-    </nav>
-    <div id="indice" class="cajas">
-        <h1 id="titulo">Bienvenido al índice de mi proyecto final</h1>
-        <div id="contenido" class="cajas">
-            <a id="unJuego" href="./tresEnRaya.html" target="_blank">Un Juego</a>
-            <a id="masInfo" onclick="masInformacion()"><u>Más información</u></a>
-        </div>
+
+    <div id="indice">
     </div>
+    <picture>
+        <img id="logo" src="./logo.png">
+    </picture>
+    <div id="contenidoInicio">
+        <picture>
+            <img id="fotoNoticia" src="./bizarrap-shakira.jpg">
+            <div style="display: flex; flex-direction: column;">
+                <h2>Bombazo de Shakira y Bizarrap</h2>
+                <p>Increíble el exitazo del último hit de Bizarrap con Shakira, siendo la Session nº 53 de la saga de
+                    sesiones del jóven
+                    productor argentino, que está revolucionando el mundo entero debido al beef con el futbolista Gerard
+                    Piqué, ex marido de la cantante colombiana.</p>
+            </div>
+        </picture>
+        <a id="unJuego" href="./tresEnRaya.html" target="_blank">Un Juego</a>
+        <a id="masInfo" onclick="masInformacion()"><u>Más información</u></a>
+    </div>
+    <nav>
+        <ul>
+            <a class="botones" href="./index.html">
+                <li class="fondobotones" id="seleccionado">Inicio</li>
+            </a>
+            <a class="botones" href="./ajustes.html">
+                <li class="fondobotones">Ajustes</li>
+            </a>
+        </ul>
+    </nav>
     <script src="index.js"></script>
 </body>
 
