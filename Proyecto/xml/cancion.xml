@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cancion.xsl"?>
+<cancion>
+	<titulo>No me doy por vencido</titulo>
+	<autor>Luis Fonsi</autor>
+	<letras>
+		<estrofa tipo="normal">
+			<verso>Me quedo callado</verso>
+			<verso>Soy como un niño dormido</verso>
+			<verso>Que puede despertarse con apenas solo un ruido</verso>
+			<verso>Cuando menos te lo esperas</verso>
+			<verso>Cuando menos lo imagino</verso>
+			<verso>Sé que un día no me aguanto y voy y te miro</verso>			
+		</estrofa>
+		<estrofa tipo="normal">
+			<verso>Y te lo digo a los gritos</verso>
+			<verso>Y te ríes y me tomas por un loco atrevido</verso>
+			<verso>Pues no sabes cuánto tiempo en mis sueños has vivido</verso>
+			<verso>Ni sospechas cuando te nombré</verso>			
+		</estrofa>
+		<estrofa tipo="estribillo">
+			<verso>Yo, yo no me doy por vencido</verso>
+			<verso>Yo quiero un mundo contigo</verso>
+			<verso>Juro que vale la pena esperar, y esperar y esperar un suspiro</verso>
+			<verso>Una señal del destino</verso>
+			<verso>No me canso, no me rindo, no me doy por vencido</verso>
+		</estrofa>
+		<estrofa tipo="normal">
+			<verso>Tengo una flor de bolsillo</verso>
+			<verso>Marchita de buscar a una mujer que me quiera</verso>
+			<verso>Y reciba su perfume hasta traer la primavera</verso>
+			<verso>Y me enseñe lo que no aprendí de la vida</verso>
+			<verso>Que brilla más cada día</verso>
+			<verso>Porque estoy tan sólo a un paso de ganarme la alegría</verso>
+			<verso>Porque el corazón levanta una tormenta enfurecida</verso>
+			<verso>Desde aquel momento en que te vi</verso>
+		</estrofa>
+		<estrofa tipo="estribillo">
+			<verso>Yo, yo no me doy por vencido</verso>
+			<verso>Yo quiero un mundo contigo</verso>
+			<verso>Juro que vale la pena esperar, y esperar y esperar un suspiro</verso>
+			<verso>Una señal del destino</verso>
+			<verso>No me canso, no me rindo, no me doy por vencido</verso>
+		</estrofa>
+		<estrofa tipo="normal">
+			<verso>Este silencio esconde demasiadas palabras</verso>
+			<verso>No me detengo, pase lo que pase seguiré</verso>
+		</estrofa>
+		<estrofa tipo="estribillo">
+			<verso>Yo, yo no me doy por vencido</verso>
+			<verso>Yo quiero un mundo contigo</verso>
+			<verso>Juro que vale la pena esperar, y esperar y esperar un suspiro</verso>
+			<verso>Una señal del destino</verso>
+			<verso>No me canso, no me rindo, no me doy por vencido</verso>
+		</estrofa>
+		<estrofa tipo="estribillo">
+			<verso>Oh, oh, oh</verso>
+			<verso>Juro que vale la pena esperar, y esperar y esperar un suspiro</verso>
+			<verso>Una señal del destino</verso>
+			<verso>No me canso, no me rindo, no me doy por vencido</verso>
+		</estrofa>
+	</letras>
+</cancion>

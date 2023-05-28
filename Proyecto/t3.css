@@ -4,7 +4,7 @@
 
 .fondobotones {
     display: inline-block;
-    width: 100px;
+    width: 120px;
     height: 4vh;
     background-color: blanchedalmond;
     margin: 5px;
@@ -66,7 +66,7 @@ a {
 
 nav {
     position: fixed;
-    top: 5;
+    top: 0;
     left: 0;
 }
 
@@ -98,4 +98,60 @@ picture {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+}
+
+.modal {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.63);
+	opacity:0;
+	pointer-events: none;
+    height: 111vh;
+}
+.modal:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+#contenido {
+    text-align: center;
+    width: 400px;
+	position: relative;
+	margin: 20% auto;
+	padding: 5px 20px 13px 20px;
+	background: orange;
+}
+
+.cerrado {
+	background: #414141;
+    font-weight: bold;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+    margin-left: 47.5%;
+    margin-top: -3%;
+	text-align: center;
+	width: 24px;
+    border-radius: 12px;
+	text-decoration: none;
+}
+.cerrado:hover { 
+    background: rgb(255, 57, 57); 
+}
+
+iframe {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 150vh;
+    height: 85vh;
+}
+
+#usuario {
+    position: fixed;
+    top: 0;
+    right: 0;
 }
