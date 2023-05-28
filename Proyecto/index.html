@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-
+<!-- Borja Bravo Casermeiro
+     1º DAW -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3er Trimestre - Borja Bravo Casermeiro</title>
+    <title>InfoWorldMusic - Inicio</title>
     <link href="t3.css" rel="stylesheet">
 </head>
-
 <body>
-
-    <div id="indice">
+    <div id="indice" class="cajas">
     </div>
     <picture>
         <img id="logo" src="./logo.png">
@@ -19,39 +18,50 @@
     <div id="contenidoInicio">
         <picture>
             <img id="fotoNoticia" src="./bizarrap-shakira.jpg">
-            <div style="display: flex; flex-direction: column;">
+            <div id="textoNoticia">
                 <h2>Bombazo de Shakira y Bizarrap</h2>
                 <p>Increíble el exitazo del último hit de Bizarrap con Shakira, siendo la Session nº 53 de la saga de
-                    sesiones del jóven
+                    sesiones del joven
                     productor argentino, que está revolucionando el mundo entero debido al beef con el futbolista Gerard
                     Piqué, ex marido de la cantante colombiana.</p>
             </div>
         </picture>
-        <a id="unJuego" href="./tresEnRaya.html" target="_blank">Un Juego</a>
-        <a id="masInfo" href="#abierto"><u>Más información</u></a>
+        <ul id="infoInicio">
+            <a id="unJuego" href="./tresEnRaya.html" target="_blank">Un Juego</a>
+            <a id="masInfo" href="#abierto"><u>Más información</u></a>
+        </ul>
     </div>
     <nav>
-        <a id="usuario">Sin identificar</a>
+        <ul id="fondoUsuario">
+            <a>Usuario: </a>
+            <a id="usuario">Sin identificar</a>
+        </ul>
         <ul>
             <a class="botones" href="./index.html">
                 <li class="fondobotones" id="seleccionado">Inicio</li>
+            </a>
+            <a class="botones" href="./cantantes.html">
+                <li class="fondobotones">Cantantes</li>
             </a>
             <a class="botones" href="./unaCancion.html">
                 <li class="fondobotones">Una Canción</li>
             </a>
             <a class="botones" href="./ajustes.html">
                 <li class="fondobotones">Ajustes</li>
-            </a> 
+            </a>
         </ul>
     </nav>
     <div id="abierto" class="modal">
         <div id="contenido">
             <a href="#cerrado" class="cerrado">X</a>
-            <p>Esta es mi página con un modal</p>
-            <p>Por Borja Bravo Casermeiro de 1º DAW</p>
+            <p>Borja Bravo Casermeiro</p>
+            <p>1º DAW</p>
+            <p>Aquí explicaré los requisitos no visibles: </p>
+            <li>Los input seleccionados se almacenan en localStorage para usarlo en las diferentes páginas, salvo el usuario que se almacena en sessionStorage</li>
+            <li>En consola se muestran los elementos de ajustes guardados en localStorage y sessionStorage</li>
+            <li>Tambien la funcion addEventListener para que el usuario se resetee al cerrar sesión</li>
         </div>
     </div>
-    <script src="index.js"></script>
+    <script src="t3.js"></script>
 </body>
-
 </html>

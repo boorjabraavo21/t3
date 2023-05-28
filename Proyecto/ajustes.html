@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
-
+<!-- Borja Bravo Casermeiro
+     1º DAW -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajustes</title>
+    <title>InfoWorldMusic - Ajustes</title>
     <link href="t3.css" rel="stylesheet">
 </head>
 
 <body>
-    <br />
+    <div class="cajas"></div>
     <h1>Ajustes de la página</h1>
-    <p>Elija un color de fuente</p>
-    <input type="color" name="colorElegido" />
-    <p>Elija la familia de fuente</p>
-    <select name="famFuente">
-        <option value="'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Gill Sans</option>
-        <option value="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Franklin Gothic Medium</option>
-        <option value="'Times New Roman', Times, serif">Times New Roman</option>
-    </select>
-    <p>Elija el fondo de pantalla</p>
-    <select name="fondoPantalla">
-        <option value='url("./conciertoMelendi.jpg")'>Melendi</option>
-        <option value='url("./Bad Bunny.webp")'>Bad Bunny</option>
-        <option value='url("./conciertoRosalia.jpg")'>Rosalia</option>
-    </select>
-    <p>Dime tu nombre</p>
-    <input type="text" name="nombreUsuario"/>
-    <br />
-    <br />
-    <button type="button" onclick="aplicarCambios()">APLICAR</button>
-    <p id="mensaje"></p>
+    <div id="ajustes">
+        <br />
+        <p>Elija un color de fuente</p>
+        <input type="color" name="colorElegido" />
+        <p>Elija la familia de fuente</p>
+        <select name="famFuente">
+            <option value="'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Gill Sans</option>
+            <option value="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Franklin Gothic Medium</option>
+            <option value="'Times New Roman', Times, serif">Times New Roman</option>
+        </select>
+        <p>Elija el fondo de pantalla</p>
+        <select name="fondoPantalla">
+            <option value='url("./conciertoMelendi.jpg")'>Melendi</option>
+            <option value='url("./Bad Bunny.webp")'>Bad Bunny</option>
+            <option value='url("./conciertoRosalia.jpg")'>Rosalia</option>
+        </select>
+        <p>Dime tu nombre</p>
+        <form id="formUsuario">
+            <input type="text" name="nombreUsuario" />
+        </form>
+        <br />
+        <br />
+        <button type="button" onclick="aplicarCambios()">APLICAR</button>
+        <p id="mensaje"></p>
+    </div>
+
     <nav>
-        <a id="usuario">Sin identificar</a>
+        <ul id="fondoUsuario">
+            <a>Usuario: </a>
+            <a id="usuario">Sin identificar</a>
+        </ul>
         <ul>
             <a class="botones" href="./index.html">
-                <li class="fondobotones" id="seleccionado">Inicio</li>
+                <li class="fondobotones">Inicio</li>
+            </a>
+            <a class="botones" href="./cantantes.html">
+                <li class="fondobotones">Cantantes</li>
             </a>
             <a class="botones" href="./unaCancion.html">
                 <li class="fondobotones">Una Canción</li>
             </a>
             <a class="botones" href="./ajustes.html">
-                <li class="fondobotones">Ajustes</li>
+                <li class="fondobotones" id="seleccionado">Ajustes</li>
             </a>
         </ul>
     </nav>
-    <script src="index.js"></script>
+    <script src="t3.js"></script>
 </body>
 
 </html>
